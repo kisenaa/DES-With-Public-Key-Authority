@@ -90,7 +90,7 @@ class ClientProgram():
         confirmation = input("Do you want to accept this client connection? (yes/no): ")
         if confirmation.lower() == 'no' :
             print("Connection Refused ! Terminating Connection ...")
-            self.connection.close()
+            self.client_connection.close()
             return False
         else :
             print("Connection Accepted !")
